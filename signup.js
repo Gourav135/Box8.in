@@ -4,11 +4,6 @@ function signup() {
     var pass = document.getElementById("pass").value
     
 
-    // var user = {
-    //     name: name,
-    //     email: email,
-    //     password: pass
-    // };
     if (name.length == 0 || email.length == 0 || pass.length == 0) {
         alert("Fill all Details.....!");
     }
