@@ -24,17 +24,8 @@ function signin() {
       alert("Phone Number Not Registerd......!");
       window.location.href="signup.html"
       }
-
-  //   if (number.length == 0) {
-  //     alert("Fill all Details.....!");
-  //   } else {
-  //     alert("Signin Successful...!");
-  //     // window.location.href = "signup.html";
-  //     }
-
-  // if (number == user.number) {
-  //     alert("Signin successful....!");
-  //     window.location.href = "";
-  // }
-  // if (number == user.number);
 }
+
+document.getElementById("gle").addEventListener("click", function () {
+  window.location.href = "signup.html";
+})
