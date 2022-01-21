@@ -37,6 +37,6 @@ function signin() {
   }
 }
 
-document.getElementById("gle").addEventListener("click", function () {
+document.getElementById("logo").addEventListener("click", function () {
   window.location.href = "signup.html";
 });
