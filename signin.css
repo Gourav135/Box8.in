@@ -1,21 +1,30 @@
-body {
+* {
   margin: 0px;
   padding: 0px;
   font-family: "poppins", sans-serif;
-  background-color: rgb(224, 196, 224);
-/* background-image: url(https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/d/g/p5524-15746655965ddb7d7cf154c.jpg?tr=tr:n-large);
-background-repeat: no-repeat;
-background-size: cover;
-object-fit: cover; */
-
 }
-
+#body1{
+  width: 100%;
+  height: 700px;
+  background-color: rgb(206, 8, 8);
+  /* background-image: url(https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2016/10/24/Photos/Incoming/Box8-kC0G--621x414@LiveMint.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;*/
+  opacity: 0.6;
+  position: absolute; 
+}
+/* #nav{
+  top: 0px
+} */
 #content {
+  position: absolute;
   padding: 20px 50px;
   display: flex;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 60px;
   height: 550px;
+  background-color: white;
   /* border: 1px solid red; */
 }
 #right>img {
