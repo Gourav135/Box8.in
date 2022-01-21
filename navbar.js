@@ -32,7 +32,7 @@ function navbar(){
         <div id="line"></div>
         <div id="sign" >
           <img id="icon" src="https://cdn-icons.flaticon.com/png/512/4929/premium/4929629.png?token=exp=1642519282~hmac=c706fc211e042c4d243df219785c2e06" alt="">
-        <p>Sign in</p>
+        <p id="change_name">Sign in</p>
         </div>`
 }
 
