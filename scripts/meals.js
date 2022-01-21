@@ -178,6 +178,50 @@ let addedToCart = JSON.parse(localStorage.getItem("addedToCart")) || [];
 
 function addToCart(event_obj)
 {
+    if(addedToCart.length == 0)
+    {
+        addedToCart.push(makeCart(event_obj));
+        localStorage.setItem("addedToCart", JSON.stringify(addedToCart));
+        event_obj.target.textContent = "Added To Cart";
+        event_obj.target.style.backgroundColor = "black";
+    }
+    else
+    {
+        let isPresent = false;
+        // loop to find already added or not 
+       for(let i = 0; i < addedToCart.length; i++)
+       {
+           if(event_obj.target.parentElement.id == addedToCart[i].mealId) // meal is already present in cart
+           {
+               isPresent = true;
+               if(event_obj.target.previousElementSibling.lastElementChild.firstElementChild.nextElementSibling.textContent == addedToCart[i].mealQty) // qty matched  // so remove from cart
+               {
+                   addedToCart.splice(i, 1);
+                   localStorage.setItem("addedToCart", JSON.stringify(addedToCart));
+                   event_obj.target.textContent = "Add To Cart";
+                   event_obj.target.style.backgroundColor = "#ed0331";
+               }
+               else
+               {
+                   addedToCart[i].mealQty = event_obj.target.previousElementSibling.lastElementChild.firstElementChild.nextElementSibling.textContent;
+                   localStorage.setItem("addedToCart", JSON.stringify(addedToCart));
+                   event_obj.target.textContent = "Added To Cart";
+                   event_obj.target.style.backgroundColor = "black";
+               }
+               break;
+           }
+       }
+        if(!isPresent)  // not present
+        {
+            addedToCart.push(makeCart(event_obj));
+            localStorage.setItem("addedToCart", JSON.stringify(addedToCart));
+            event_obj.target.textContent = "Added To Cart";
+            event_obj.target.style.backgroundColor = "black";
+        }
+    }
+}
+function makeCart(event_obj)
+{
     let meal_category = event_obj.target.parentElement.firstElementChild.nextElementSibling.firstElementChild.src;
     if(meal_category.includes("non-veg"))
     {
@@ -188,6 +232,7 @@ function addToCart(event_obj)
         meal_category = "veg";
     }
     let cart = {
+        mealId : event_obj.target.parentElement.id,
         mealThumb : event_obj.target.parentElement.firstElementChild.src,
         mealCategory : meal_category,
         meal : event_obj.target.parentElement.firstElementChild.nextElementSibling.lastElementChild.textContent,
@@ -195,8 +240,7 @@ function addToCart(event_obj)
         mealArea : event_obj.target.previousElementSibling.previousElementSibling.lastElementChild.textContent,
         mealQty : event_obj.target.previousElementSibling.lastElementChild.firstElementChild.nextElementSibling.textContent,
     };
-    addedToCart.push(cart);
-    localStorage.setItem("addedToCart", JSON.stringify(addedToCart));
+    return cart;
 }
 
 // ------------------------------------------------------------------------------------------>
@@ -277,12 +321,4 @@ function makeFav(event_obj)
         return fav;
 }
 
-// function changeFavColor()
-// {
-//     for(let j = 0; j < favMeals.length; j++)
-//     {
-//         console.log(favMeals[j]);
-//         favMeals[j].style.backgroundColor = "#ed0331";
-//     }
-// }
 // ------------------------------------------------------------------------------------------>

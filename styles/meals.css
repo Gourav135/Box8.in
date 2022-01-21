@@ -85,7 +85,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(200px, auto);
-    grid-gap: 30px 30px;
+    grid-gap: 30px 25px;
 
 }
 #container > #meals_box > div > div:last-child > div{
@@ -95,7 +95,7 @@ body{
 }
 #container > #meals_box > div > div:last-child > div > img{
     width: 100%;
-    height: 280px;
+    height: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     cursor: pointer;
@@ -119,7 +119,6 @@ body{
 }
 #container > #meals_box > div > div:last-child > div > #priceAndArea{
     /* border: 1px solid black; */
-    /* margin: 5% 0%; */
     margin-bottom: 6%;
     padding: 0% 3%;
     display: flex;
@@ -128,11 +127,10 @@ body{
 }
 #container > #meals_box > div > div:last-child > div > #priceAndArea > #mealPrice_box{
     /* border: 1px solid red; */
-    width: 16%;
     font-weight: bolder;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 5px;
 }
 #container > #meals_box > div > div:last-child > div > #priceAndArea > span#area{
     border: 1px solid #ed0331;
@@ -171,8 +169,6 @@ body{
     margin-bottom: 3%;
 }
 #container > #meals_box > div > div:last-child > div > div#favQty_box > div#fav{
-    /* border-left: 1px solid red; */
-    /* border-bottom: 1px solid red;   */
     width: 15px;
     height: 15px;
     background-color: #f8b4c2;
