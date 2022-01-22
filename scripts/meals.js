@@ -1,6 +1,5 @@
 // sidebar stuffs ---------------------------------------------------------------------->
 let sidebar_anchor = document.querySelectorAll(".sidebar_anchor");
-// console.log(sidebar_anchor);
 for(let i = 0; i < sidebar_anchor.length; i++)
 {
     sidebar_anchor[i].addEventListener("focus", (event_obj) => {
@@ -10,8 +9,11 @@ for(let i = 0; i < sidebar_anchor.length; i++)
 
         span1.style.color = "#ed0331";
         span1.style.fontWeight = "bold";
+        event_obj.target.style.borderLeft = "2px solid red";
     })
-}
+} 
+
+// ------------------------------------------------------------------------------------------------->
  
 // generating random number for price of the meal ------------------------------------------>
 function generatePrice()
@@ -50,8 +52,6 @@ function appendMeals(meal)
 
     let main_div = document.createElement("div");
     main_div.id = "a" + meal.idMeal;
-    // main_div.setAttribute("id", `a${meal.idMeal}`);
-    // console.log(main_div.id);
 
     // ------------------------------------>
 
