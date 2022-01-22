@@ -11,18 +11,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;*/
-  opacity: 0.6;
-  position: absolute; 
+  /* opacity: 0.6; */
+  /* position: absolute;  */
 }
+
 /* #nav{
   top: 0px
 } */
 #content {
-  position: absolute;
+
+  /* position: absolute; */
   padding: 20px 50px;
   display: flex;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 8%;
   height: 550px;
   background-color: white;
   /* border: 1px solid red; */
