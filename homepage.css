@@ -6,13 +6,13 @@ body{
 
 
 #slider{  
-    width:900px;  
+    width:100%;  
     height:300px;  
-    
+    overflow:hidden;  
 }  
 .slides{  
     display:block;  
-    width:6000px;  
+    width:7000px;  
     height:300px;  
     margin-left:0;  
     padding:0;  
@@ -20,10 +20,9 @@ body{
 .slide{  
     float:left;  
     list-style-type:none;  
-    width:900px;  
+    width:10%;  
     height:300px;  
-    
-}  
+}
 .imgggg{  
     width:100%;  
     height:100%;  
