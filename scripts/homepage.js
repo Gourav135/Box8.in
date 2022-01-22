@@ -1,7 +1,7 @@
 $(function()
 {  
     //value for animation  
-    var width = 400;  
+    var width = 600;  
     var animationSpeed = 1000;  
     var pause = 3000;  
     var currentSlide = 1;  
