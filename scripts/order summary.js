@@ -36,3 +36,9 @@ var p1 = document.createElement("h2");
 
     var address = document.querySelector("#address")
     address.textContent = `Address: ${add.address}, ${add.state}, ${add.pincode}`
+
+    document.querySelector("#shopp").addEventListener("click",function(){
+        var arr = JSON.parse(localStorage.getItem("addedToCart"))
+        var arr =[];
+        localStorage.setItem("addedToCart",JSON.stringify(arr));
+    })

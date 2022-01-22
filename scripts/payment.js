@@ -65,9 +65,6 @@ function payment(){
     }
     else{
         
-        var arr = JSON.parse(localStorage.getItem("addedToCart"))
-        var arr =[];
-        localStorage.setItem("addedToCart",JSON.stringify(arr));
         window.location.href = "order summary.html";
     }
 }

@@ -28,11 +28,15 @@ body {
   margin-top: 25px;
   
 }
+#box8,#video,#icon,p:hover{
+  cursor: pointer;
+}
+
 #video{
   height: 26px;
   width: 330px;
   margin: auto;
-  font-size: 15px;
+  font-size: 18px;
   border: 1px solid rgb(223, 219, 210);
   
 }
@@ -55,7 +59,7 @@ body {
     margin: auto;
 }
 p{
-    font-size: 15px;
+    font-size: 18px;
     margin: auto;
    
 }
