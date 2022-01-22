@@ -17,7 +17,7 @@ function navbar(){
         <div id="deals">
           <img id="icon" src="https://cdn-icons-png.flaticon.com/512/879/879757.png" alt="">
           <p>Deals</p>
-          <img id="icon" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1642842040~hmac=98e9eee024cee49c653c64e17ddc463c" alt="">
+          <img id="icon" src="./icons/arrow.png" alt="">
         </div>
         <div id="line"></div>
         <div id="favourites" >
