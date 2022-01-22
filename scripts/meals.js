@@ -304,7 +304,7 @@ function makeFav(event_obj)
     let meal_cat = event_obj.target.parentElement.parentElement.firstElementChild.nextElementSibling.firstElementChild.src;
         if(meal_cat.includes("non-veg"))
         {
-            meal_cat = "non-veg"
+            meal_cat = "non-veg";   
         }
         else
         {
@@ -323,13 +323,13 @@ function makeFav(event_obj)
 
 // ------------------------------------------------------------------------------------------>
 // adding eventListener to Sidebar anchor tags
-document.querySelectorAll(`a[href="#"]`).forEach((anchor) => {
-    anchor.addEventListener("click", function (event_obj){
-        event_obj.preventDefault();
-        // console.log(event_obj);
-        document.qureySelecotr(this.getAttribute("href")).scrollIntoView({
-            behavior : "smooth" 
-        });
-    })
-})
+// document.querySelectorAll(".sidebar_anchor").forEach((anchor) => {
+//     anchor.addEventListener("click", function (event_obj){
+//         event_obj.preventDefault();
+//         console.log(event_obj.target);
+//         document.querySelector(event_obj.target.getAttribute("href")).scrollIntoView({
+//             behavior : "smooth" 
+//         });
+//     })
+// })
 // ------------------------------------------------------------------------------------------>
