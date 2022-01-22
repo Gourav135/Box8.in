@@ -15,9 +15,9 @@ function navbar(){
         </div>
         <div id="line"></div>
         <div id="deals">
-          <img id="icon" src="https://cdn-icons.flaticon.com/png/512/2225/premium/2225110.png?token=exp=1642495780~hmac=202ee37d5f131f4fd0ebcf3a0eddc394" alt="">
+          <img id="icon" src="https://cdn-icons-png.flaticon.com/512/879/879757.png" alt="">
           <p>Deals</p>
-          <img id="icon" src="https://cdn-icons.flaticon.com/png/512/1633/premium/1633716.png?token=exp=1642496550~hmac=c80fc6a2237dca7b0d5a08044d1dd72c" alt="">
+          <img id="icon" src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1642842040~hmac=98e9eee024cee49c653c64e17ddc463c" alt="">
         </div>
         <div id="line"></div>
         <div id="favourites" >
