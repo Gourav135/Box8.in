@@ -28,6 +28,10 @@ body {
   margin-top: 25px;
   
 }
+#box8,#video,#icon,p:hover{
+  cursor: pointer;
+}
+
 #video{
   height: 26px;
   width: 330px;
