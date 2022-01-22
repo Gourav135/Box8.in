@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
+    <div id="navbar"></div>
     <div id="body1"></div>
     <div id="content">
         <div id="right">
@@ -26,7 +28,20 @@
                 <p>By signing in,you agree to the <span>Terms and Conditions</span></p>
             </div>
     </div>
-    
+    <div id="footerdiv"></div>
 </body>
 </html>
 <script src="signup.js"></script>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+   
+    let nav = document.getElementById("navbar");
+
+    nav.innerHTML = navbar();
+
+    let footerdiv = document.getElementById("footerdiv");
+    footerdiv.innerHTML=footer();
+
+</script>
