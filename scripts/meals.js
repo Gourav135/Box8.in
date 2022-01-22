@@ -322,3 +322,14 @@ function makeFav(event_obj)
 }
 
 // ------------------------------------------------------------------------------------------>
+// adding eventListener to Sidebar anchor tags
+document.querySelectorAll(`a[href="#"]`).forEach((anchor) => {
+    anchor.addEventListener("click", function (event_obj){
+        event_obj.preventDefault();
+        // console.log(event_obj);
+        document.qureySelecotr(this.getAttribute("href")).scrollIntoView({
+            behavior : "smooth" 
+        });
+    })
+})
+// ------------------------------------------------------------------------------------------>
