@@ -5,40 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/signin.css">
 </head>
 <body>
-    <div id="navbar"></div>
-    <div id="content">
-        <div id="right">
-            <img src="https://assets.box8.co.in/images/Box8Banner.jpg" alt="">
+    <div id="navbar" ></div>
+    <div id="margin234">
+        <h1 id="shopping">Shopping Cart</h1>
+    <div id="cart12">
+        <div id="cartdiv1"></div>
+        <div  id="cartdiv2">
         </div>
-        <div id="left">
-        
-            <div>
-                <h1>SIGN UP</h1>
-                <input id="name" type="text" placeholder="Name"><br>
-                <input id="mail" type="email" placeholder="Email"><br>
-                <input id="pass" type="password" placeholder="Password*"><br>
-    
-                <button id="cont" onclick="signup()">CONTINUE</button>
-                <p>By signing in,you agree to the <span>Terms and Conditions</span></p>
-            </div>
     </div>
     </div>
     <div id="footerdiv"></div>
 </body>
 </html>
-<script src="./scripts/signup.js"></script>
+<script src="./scripts/cart.js">
+
+</script>
 <script type="module">
 
     import navbar from "./components/navbar.js";
     import footer from "./components/footer.js";
 
- 
     let nav = document.getElementById("navbar");
 
     nav.innerHTML = navbar();
@@ -47,5 +38,8 @@
     footerdiv.innerHTML=footer();
     document.querySelector("#cart").addEventListener("click",function(){
         window.location.href = "cart.html"
+    })
+    document.querySelector("#sign").addEventListener("click",function(){
+        window.location.href = "signin.html"
     })
 </script>

@@ -42,17 +42,21 @@
 </body>
 
 </html>
-<script src="signin.js"></script>
+<script src="./scripts/signin.js"></script>
 <script type="module">
 
     import navbar from "./components/navbar.js";
     import footer from "./components/footer.js";
-   
+
+
     let nav = document.getElementById("navbar");
 
     nav.innerHTML = navbar();
 
     let footerdiv = document.getElementById("footerdiv");
     footerdiv.innerHTML=footer();
+    document.querySelector("#cart").addEventListener("click",function(){
+        window.location.href = "cart.html"
+    })
 
 </script>

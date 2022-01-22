@@ -1,7 +1,7 @@
 function navbar(){
     return` <div class="navbar">
     <div id="left_side">
-     <a href="*">
+     <a href="./index.html">
       <img id="box8" src="https://d2pc4443o2qatl.cloudfront.net/20220112094354/assets/images/logo.png"/>
       
      </a>
@@ -31,8 +31,9 @@ function navbar(){
         </div>
         <div id="line"></div>
         <div id="sign" >
-          <img id="icon" src="https://cdn-icons.flaticon.com/png/512/4929/premium/4929629.png?token=exp=1642519282~hmac=c706fc211e042c4d243df219785c2e06" alt="">
-        <p id="change_name">Sign in</p>
+          <img id="icon" src="https://cdn-icons.flaticon.com/png/512/4929/premium/4929629.png?token=exp=1642840097~hmac=e6077f1f72280362275bd8c2a2b5fa1e
+          " alt="">
+        <p id="change_name">Profile</p>
         </div>`
 }
 

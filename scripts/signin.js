@@ -33,7 +33,7 @@ function signin() {
   }
   if (flag == 1) {
     alert("Signin Successful...!");
-    window.location.href = "homepage.html";
+    window.location.href = "index.html";
   }
 }
 

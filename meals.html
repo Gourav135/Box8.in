@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box8 - Meals</title>
-
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/meals.css">
 
 </head>
 <body>
+    <div id="navbar"></div>
     <div id="container">
         <div id="sidebar">
             <h1>Menu</h1>
@@ -23,7 +25,7 @@
                 </div>
             </a>
             <a href = "#Chicken_cont" id="chicken" class = "sidebar_anchor">
-                <img src="https://cdn-icons.flaticon.com/png/128/2195/premium/2195195.png?token=exp=1642501240~hmac=dac888bf9de796c4261c0b1c643e1fc6" alt="">
+                <img src="" alt="">
                 <div>
                     <span>Chicken</span>
                     <span>22</span>
@@ -51,7 +53,7 @@
                 </div>
             </a>
             <a href = "#Pork_cont" id="pork" class = "sidebar_anchor">
-                <img src="https://cdn-icons.flaticon.com/png/128/2120/premium/2120232.png?token=exp=1642500707~hmac=2a5e33e1548b66d0baa3aa7e845b9a71" alt="">
+                <img src="https://cdn-icons.flaticon.com/png/128/2120/premium/2120232.png?token=exp=1642839925~hmac=fdcb3d7541658f7a80fa13a8d387fd10" alt="">
                 <div>
                     <span>Pork</span>
                     <span>22</span>
@@ -182,7 +184,26 @@
             </div>
         </div>
     </div>
+    <div id="footerdiv"></div>
 </body>
 </html>
 
 <script src="./scripts/meals.js"></script>
+<script type="module">
+
+    import navbar from "./components/navbar.js";
+    import footer from "./components/footer.js";
+
+    let nav = document.getElementById("navbar");
+
+    nav.innerHTML = navbar();
+
+    let footerdiv = document.getElementById("footerdiv");
+    footerdiv.innerHTML=footer();
+    document.querySelector("#cart").addEventListener("click",function(){
+        window.location.href = "cart.html"
+    })
+    document.querySelector("#sign").addEventListener("click",function(){
+        window.location.href = "signin.html"
+    })
+</script>

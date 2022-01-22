@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="slider.css" />  
   
   
-  <div class="container">  
+  <div class="container" style="margin-top: 5%;">  
         <div id="slider">  
             <ul class="slides">  
                 <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/809" class="imgggg"/></li>  
@@ -38,29 +38,6 @@
                 <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/319" class="imgggg"/></li>
                 <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/584" class="imgggg"/></li>
                 <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/809" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/757" class="imgggg" /></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/319" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/584" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/809" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/757" class="imgggg" /></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/319" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/584" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/809" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/757" class="imgggg" /></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/319" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/584" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/809" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/757" class="imgggg" /></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/319" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/584" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/809" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/757" class="imgggg" /></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/319" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/584" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/809" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/757" class="imgggg" /></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/319" class="imgggg"/></li>
-                <li class="slide"><img src="https://assets.box8.co.in/horizontal-rectangle/web/banner/584" class="imgggg"/></li>              
             </ul>  
         </div>  
   </div>  
@@ -165,27 +142,7 @@
 
 
 
-    <div id="toff">
-
-        <div id="tcoupen">
-            <div id="ct1">You’ll love us even more on the app!</div>
-            <div id="ct2">Flat ₹200 OFF on first app order</div>
-            <div id="ct3">Code: MEAL200 </div>
-
-            <div id="appdownload">
-                <div id="appstore"><img src="https://d2pc4443o2qatl.cloudfront.net/20220112094354/assets/images/app-store.png" alt=""></div>
-                <div id="playstore"><img src="https://d2pc4443o2qatl.cloudfront.net/20220112094354/assets/images/google-play.png" alt=""></div>
-            </div>
-        </div>
-
-
-        <div id="halfmob">
-            <div id="half1"><img src="https://d2pc4443o2qatl.cloudfront.net/20220112094354/assets/images/footer-phone-1.png" alt="" class="halfsetimg"></div>
-            <div id="half2"><img src="https://d2pc4443o2qatl.cloudfront.net/20220112094354/assets/images/footer-phone-2.png" alt="" class="halfsetimg"></div>
-
-        </div>
-
-    </div>
+    
 
 
 
@@ -193,19 +150,25 @@
   
 </body>
 </html>
-<script src="homepage.js">
+<script src="./scripts/homepage.js">
 
 </script>
 <script type="module">
 
     import navbar from "./components/navbar.js";
     import footer from "./components/footer.js";
-   
+    
+    
     let nav = document.getElementById("navbar");
 
     nav.innerHTML = navbar();
 
     let footerdiv = document.getElementById("footerdiv");
     footerdiv.innerHTML=footer();
-
+    document.querySelector("#cart").addEventListener("click",function(){
+        window.location.href = "cart.html"
+    })
+    document.querySelector("#sign").addEventListener("click",function(){
+        window.location.href = "signin.html"
+    })
 </script>
