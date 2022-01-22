@@ -31,8 +31,7 @@ function navbar(){
         </div>
         <div id="line"></div>
         <div id="sign" >
-          <img id="icon" src="https://cdn-icons.flaticon.com/png/512/4929/premium/4929629.png?token=exp=1642840097~hmac=e6077f1f72280362275bd8c2a2b5fa1e
-          " alt="">
+          <img id="icon" src="./icons/user.png" alt="">
         <p id="change_name">Profile</p>
         </div>`
 }
