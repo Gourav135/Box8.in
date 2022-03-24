@@ -1,6 +1,6 @@
 # Box8 Clone
 
-<p> Box8 is a Online food ordering website where you can order different items of food through online.You can filter the food items by category, by food Name etc..You can add the food items in cart-page and wishlist then order the food items by checking out.<p/>
+<p> Box8 is an Online food ordering website where you can order different categories of food through online.You can filter the food items by category. You can add the food items in your cart and wishlist then order the food items by checking out.<p/>
 
 ---
 # Welcome :wave:
@@ -13,7 +13,7 @@ https://gourav135.github.io/Box8.in/
 
 ### About this project: :raised_hands:
 
-> This is a team project, built by us in the Construct Week - Unit 3 Masai School.
+> This project is built by a team of five members in 3 days as a construct week project at Masai School.
 
 ---
 
@@ -39,7 +39,7 @@ https://gourav135.github.io/Box8.in/
 - `Home Page`: use same images exactly looking as original website.
 - `Sign-Up Page`: User details validated directly from local stroage.
 - `Sign-In Page`: User authentication to check whether user email and password match with details existing in the local storage.
-- `Product Category Page`: Products created dynamically, with sorting and filtering features.
+- `Product Page`: Meal items' details fetched from a RestAPI and displayed under different categories. Add to cart, Add to Favourite, quantity increment and decrement options, remove meal from cart and favorite options, etc are included.
 - `Cart Page`: User can see or remove food items added in the cart.
 - `Wishlist Page`: Users can add or remove fod items to the wishlist.
 - `Checkout Page`: Users can add the delivery address
@@ -51,7 +51,7 @@ https://gourav135.github.io/Box8.in/
 
 ### How To Use ✅
 
-First you have to have to go to the signup page and create a new account. Then you will be find an alert that signup successful. After the signup process is completed you have to login with the same details you will redirected to landing page. You can now go to the category page and navigate to add food items to the cart. After that you can proceed to the checkout page. you will redirected to the checkout page and add your address and proceed to payment page to add your debit/credit card detials to place your order successfully. 
+First you have to have to go to the signup page and create a new account. After signup, you have to login with the same details. On successful login, you will be redirected to landing page. You can visit the product page where you can find meals listed under different categories. You can add dishes to your cart and proceed to the checkout page where you will be required to add few details of yourself. Finally you need to proceed to payment page to add your debit/credit card detials to place your order successfully. 
 
 ---
 
@@ -60,7 +60,6 @@ First you have to have to go to the signup page and create a new account. Then y
 - `HTML`
 - `CSS`
 - `JavaScript`
-- `Local Storage`
 
 ---
 
