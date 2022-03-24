@@ -13,7 +13,7 @@ https://gourav135.github.io/Box8.in/
 
 ### About this project: :raised_hands:
 
-> This is a team project, built by us in the Construct Week - Unit 3 & unit 4 at Masai School.
+> This is a team project, built by us in the Construct Week - Unit 3 Masai School.
 
 ---
 
