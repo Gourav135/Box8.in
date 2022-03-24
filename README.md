@@ -1,6 +1,6 @@
 # Box8 Clone
 
-<p> Box8 is an Online food ordering website where you can order different categories of food through online.You can filter the food items by category. You can add the food items in your cart and wishlist then order the food items by checking out.<p/>
+<p> Box8 is an online food ordering website where you can order different categories of food effortlessly. You can filter the food items by category. You can add the food items in your cart and wishlist. Finally proceed to checkout to get your order delivered.<p/>
 
 ---
 # Welcome :wave:
